@@ -4,7 +4,6 @@ ImagesSubRedditViewer is an unofficial app for browsing a specific subreddit /r/
 # Basic setup
 No setup is required in order to use TriviaApp. Just Install the application and you are ready to roll.
 
-
 # Features
 - List images from subreddit /r/images and displays them as list.
 - View full screen image on clicking.
@@ -13,12 +12,11 @@ No setup is required in order to use TriviaApp. Just Install the application and
 - No boilerplate code
 - Managed the activity data using lifecycles
 
-# Custom Image Loading developed features
+# Image Loading Library features
 - Able to asynchronously load the image onto the ImageView.
 - Able to load the images faster by caching it in memory.
 - Able to load the images faster by using disk-level caching.
 - Able to cancel the on-flight load request in case the loading is not needed anymore.
-
 
 # Notes
 - Used Design Pattern : MVVM
