@@ -20,7 +20,7 @@ No setup is required in order to use TriviaApp. Just Install the application and
 - Able to cancel the on-flight load request in case the loading is not needed anymore.
 
 # Image Loading Library decisions
-- I used ThreadPoolExecutor to load images in background so that its possible to load large images by decoding and resizing them without dropping frames and also queing of new tasks are possible here.
+- It uses ThreadPoolExecutor to load images in background so that its possible to load large images by decoding and resizing them without dropping frames and also queing of new tasks are possible here.
 
 # Image Loading Library assumptions
 - It assumes that the image is present in memory, it checks the memory cache.If found good return it
