@@ -1,0 +1,3 @@
+rootProject.name='ImagesSubRedditViewer'
+include ':app'
+include ':imageloader'

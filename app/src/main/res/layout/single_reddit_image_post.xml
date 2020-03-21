@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="redditPost"
+            type="com.techneapps.imagessubredditviewer.data.models.RedditPost" />
+
+        <variable
+            name="clickHandler"
+            type="com.techneapps.imagessubredditviewer.view.adapter.recyclerview.clickhandler.RedditPostItemClickListener" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="8sp"
+        android:onClick="@{(v)->clickHandler.onItemClicked(v,redditPost)}"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/md_grey_200"
+        app:cardCornerRadius="5sp"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+            android:id="@+id/postThumnail"
+            android:layout_width="match_parent"
+            android:layout_height="220sp"
+            android:scaleType="centerCrop"
+            app:thumbnailURL="@{redditPost}"
+            android:contentDescription="@string/image" />
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
