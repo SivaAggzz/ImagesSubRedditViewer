@@ -21,6 +21,7 @@ No setup is required in order to use TriviaApp. Just Install the application and
 
 # Image Loading Library decisions
 - It uses ThreadPoolExecutor to load images in background so that its possible to load large images by decoding and resizing them without dropping frames and also queing of new tasks are possible here.
+- The ThreadPoolExecutor executes a given task using one of its threads from the thread pool so creating of newer threads is easy and handled according to out setup.
 
 # Image Loading Library assumptions
 - It assumes that the image is present in memory, it checks the memory cache.If found good return it
